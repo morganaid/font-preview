@@ -1,0 +1,40 @@
+index.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Font Preview</title>
+  <style>
+    @font-face {
+      font-family: 'Albiston';
+      src: url('MGN Albiston.woff2') format('woff2');
+    }
+    body {
+      font-family: 'Albiston', sans-serif;
+      padding: 40px;
+    }
+    input {
+      width: 100%;
+      font-size: 20px;
+      padding: 10px;
+    }
+    .preview {
+      margin-top: 20px;
+      font-size: 48px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Font Preview</h1>
+
+<input type="text"
+  value="Tulis teks di sini"
+  oninput="document.getElementById('preview').innerText=this.value">
+
+<div id="preview" class="preview">
+Tulis teks di sini
+</div>
+
+</body>
+</html>
